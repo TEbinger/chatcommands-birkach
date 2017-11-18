@@ -2,6 +2,7 @@ minetest.register_chatcommand("ichhabeverstanden", {
  params = "",
  description = "Gibt dir Rechte zum Bauen",
  func = function(name, param)
+    local player = minetest.get_player_by_name(name)
     local privs = minetest.get_player_privs(name)    
        privs.interact = true    
        privs.zoom = true    
