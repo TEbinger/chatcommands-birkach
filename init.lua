@@ -1,6 +1,6 @@
 minetest.register_chatcommand("ichhabeverstanden", {
  description = "Gibt dir Rechte zum Bauen",
-  func = function(name, param)
+ func = function(name, param)
    local privs = minetest.get_player_privs(name)    
    privs.interact = true    
    privs.zoom = true    
