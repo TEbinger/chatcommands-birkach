@@ -13,6 +13,6 @@ minetest.register_chatcommand("ichhabeverstanden", {
   end,
 })
 
---Siehe http://dev.minetest.net/chatcommand
+--Siehe http://dev.minetest.net/chatcommand  
  
  
