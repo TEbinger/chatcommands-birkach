@@ -4,10 +4,7 @@ minetest.register_chatcommand("dankefuerdasgeschenk", {
   func = function(name, param)
    local privs = minetest.get_player_privs(name)
    privs.fly = true
-   privs.interact = true
-   privs.zoom = true
-   privs.shout = true
-   privs.home = true
+   privs.fast = true
    minetest.set_player_privs(name, privs)
    return true, "Du kannst jetzt fliegen. Aktiviere/deaktiviere es mit der Taste K"
   end,
