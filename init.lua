@@ -1,12 +1,13 @@
-minetest.register_chatcommand("dankefuerdasgeschenk", {
+minetest.register_chatcommand("birkachpassword", {
  params = "",
- description = "Gibt dir Flugrechte",
+ description = "Gibt dir Baurechte",
   func = function(name, param)
    local privs = minetest.get_player_privs(name)
-   privs.fly = true
+   privs.interact = true
    privs.fast = true
+   privs.fly = true
    minetest.set_player_privs(name, privs)
-   return true, "Du kannst jetzt fliegen. Aktiviere/deaktiviere es mit der Taste K"
+   return true, "Du kannst jetzt am Haus Birkach bauen. Viel Spaß dabei!"
   end,
 })
 
