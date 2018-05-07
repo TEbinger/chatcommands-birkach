@@ -1,4 +1,4 @@
-minetest.register_chatcommand("birkachpassword", {
+minetest.register_chatcommand("Offenbarung216", {
  params = "",
  description = "Gibt dir Baurechte",
   func = function(name, param)
